@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    <title>Homepage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Natasha Salon</div>
+            <div class="links">
+            <a href="#">Главная</a>
+            <a href="#">Прайс лист</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </div>
+        </nav>
+    </header>
+    <div class="Banner">
+        <div class="bannertitle">
+            Салон Красоты <span> Natasha</span>
+        </div>
+        <div class="bannertext">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eos sed, quibusdam quia totam deleniti cupiditate unde fugiat eligendi quidem.
+        </div>
+    </div>
+    <div class="pricelist">
+        <div class="pricelisttitle">Прайс лист</div>
+        <div class="listholder">
+            {% for el in usl  %}
+                <div class="listel">
+                    <div class="imageel">
+                        
+                    </div>
+                    {{el.title}} <br>
+                    {{el.price}} <br>
+                </div>
+            {% endfor %} 
+
+        </div>
+    </div>
+</body>
+</html>
