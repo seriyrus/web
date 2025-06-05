@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Uslugi
 
 def index(request):
-    usl = Uslugi.objects.all()
+    usl = Uslugi.objects.all()[:3]
     data ={
         'usl':usl,
     }
