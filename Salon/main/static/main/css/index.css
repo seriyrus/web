@@ -94,7 +94,6 @@ background-color: rgba(0, 0, 0, 0.414);
 
 .pricelist{
     display:block;
-    position: absolute;
     margin-top: 100vh;
     color:black
 }
@@ -126,7 +125,7 @@ background-color: rgba(0, 0, 0, 0.414);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-style: italic;
+    color: red;
 }
 
 .imageel img{
@@ -136,3 +135,38 @@ background-color: rgba(0, 0, 0, 0.414);
     height: 300px;
     overflow: hidden;
 }/* 111 */
+
+
+.pricelistbutton{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pricelistbutton a{
+    width: 200px;
+    height: 25px;
+    padding: 5px 10px 10px 10px ;
+    border-radius: 25px;
+    background-color: red; 
+    color: white;
+    font-family: sans-serif;
+    font-size: 28px; 
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.pricelistbutton a:hover{
+    background-color: rgb(167, 16, 16);
+}
+
+.blockPreview{
+    width: 100vw;
+    height: 100vh;
+    background-color: #bbbbbb;
+    display: flex;
+    margin-top: 10vh;
+}

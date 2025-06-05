@@ -7,4 +7,3 @@ def index(request):
         'usl':usl,
     }
     return render(request, 'main/index.html',data)
-  
