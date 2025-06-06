@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/base.css' %}">
+    {% block css %}
+    
+    {% endblock css %}
+    <title>{{title}}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Natasha Salon</div>
+            <div class="links">
+            <a href="#">Главная</a>
+            <a href="#">Прайс лист</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </div>
+        </nav>
+    </header>
+    {% block content %}
+    
+    {% endblock content %}
+</body>
+</html>
