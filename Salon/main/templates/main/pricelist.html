@@ -1,0 +1,27 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'main/css/pricelist.css' %}">
+{% endblock css %}
+
+{% block content %}
+<div class="pricelist">
+    <div class="pricelisttitle">Прайс лист</div>
+    <div class="listholder">
+        {% for el in usl  %}
+            <div class="listel">
+                <div class="imageel">
+                    <img src="{{el.image.url}}" alt=""> <!-- image -->
+                </div>
+                {{el.title}} <br>
+                {{el.price}} <br>
+            </div>
+        {% endfor %} 
+
+    </div>
+    <div class="pricelistbutton">
+        <a href="#">Все услуги</a>
+    </div>
+</div>
+{% endblock content %}
